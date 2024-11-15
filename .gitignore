@@ -9,7 +9,6 @@ CMakeCache.txt
 *.o
 *.obj
 *.dll
-*.exe
 *.log
 .DS_Store
 Thumbs.db

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tor Bridge Connection</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_bridge_info">
+      <property name="text">
+       <string>Enter Bridge (optional):</string>
+      </property>
+    </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_bridge">
+      <property name="placeholderText">
+       <string>Example: 85.90.207.39:443 CD536075AC61D5A0C4202A137E4562C6FB7D82E4</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_connect">
+      <property name="text">
+       <string>Connect to Tor</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_torstatus">
+      <property name="text">
+       <string>Status: Not Connected</string>
+      </property>
+    </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_bridge_info_link">
+      <property name="text">
+       <string>&lt;a href=&quot;https://torscan-ru.ntc.party&quot;&gt;Get Bridges from torscan-ru.ntc.party&lt;/a&gt;</string>
+      </property>
+      <property name="openExternalLinks">
+       <bool>true</bool>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+    </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEdit_log">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Tor connection log will appear here...</string>
+      </property>
+    </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

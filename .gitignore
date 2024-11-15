@@ -1,0 +1,15 @@
+# Игнорируем папку сборки
+build-*/
+
+# Временные файлы и папки Qt и CMake
+*.pro.user
+*.qmake.stash
+CMakeFiles/
+CMakeCache.txt
+*.o
+*.obj
+*.dll
+*.exe
+*.log
+.DS_Store
+Thumbs.db
